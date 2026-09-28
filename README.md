@@ -1,11 +1,5 @@
 # Tag-Aware Book Recommender: Personalised Discovery from Ratings and Genres
-
-**Course:** DSA 4060 – Recommender Systems  
-**Author:** _[Your Full Name]_ (Student ID: _[Your ID]_) – individual project  
-**Repository:** _[GitHub repository URL]_
-
----
-
+  
 ## 1. Project Description (A. Title and Problem Statement)
 
 **Problem.** I will develop a book recommender that helps readers discover titles matching their preferred genres and rating history, while surfacing relevant, less-obvious books they have not yet rated.
@@ -19,7 +13,6 @@
 
 **How recommendations help.** A ranked list built from a reader's own ratings and genre interests replaces browsing with a short, relevant, explained shortlist.
 
----
 
 ## 2. Intended Users and Recommendation Task (B)
 
@@ -34,7 +27,6 @@
 
 **User scenario.** A reader rates five books they enjoyed (three fantasy, two mystery) and selects "fantasy". The system returns ten unread fantasy-leaning books, ranked by predicted relevance, each with a one-line reason. The reader can adjust the genre filter or the "more popular ↔ more niche" slider and see the list update.
 
----
 
 ## 3. Dataset Selection and Feasibility (C)
 
@@ -125,11 +117,7 @@ for f in books.csv ratings.csv tags.csv book_tags.csv to_read.csv; do
 done
 ```
 
-`sample_book.xml` is included in the Kaggle download and is not needed to run the code.
-
-Only one dataset is used, so no cross-dataset record matching is needed.
-
----
+`sample_book.xml` is included in the Kaggle download and is not needed to run the code
 
 ## 4. Proposed Recommendation Approaches (D)
 
@@ -165,7 +153,6 @@ Only one dataset is used, so no cross-dataset record matching is needed.
 
 A weighted combination of the content-based and matrix factorization scores, with the weight tuned on validation data. This directly addresses the weaknesses of each part (explainability and cold-start from content; accuracy from factorization).
 
----
 
 ## 5. Evaluation Plan (E)
 
@@ -192,7 +179,6 @@ Metrics are averaged over test users, and results for all approaches and the bas
 
 **Simulated cold start.** To test new-user behaviour, I will keep only 5 ratings for a random sample of users and compare all methods on their held-out ratings.
 
----
 
 ## 6. Challenges and Responsible Design (F)
 
@@ -208,7 +194,6 @@ Metrics are averaged over test users, and results for all approaches and the bas
 
 **User understanding and control.** Each recommendation shows a short explanation (the shared tags or the similar book it came from), and the user can filter by genre and move a popularity ↔ niche slider to change the results.
 
----
 
 ## 7. Implementation Plan (G)
 
@@ -227,7 +212,6 @@ Metrics are averaged over test users, and results for all approaches and the bas
 | 13 | Present and demonstrate the system | Demo and slides |
 | 14 | End-semester examination | – |
 
----
 
 ## 8. Repository Structure
 
